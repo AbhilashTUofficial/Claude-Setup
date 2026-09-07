@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "phone-parallax-3d",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/jinub/Programming/phone-parallax-3d", "--", "--port", "5173", "--strictPort"],
+      "port": 5173
+    }
+  ]
+}
