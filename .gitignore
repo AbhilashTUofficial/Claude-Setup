@@ -1,0 +1,6 @@
+# OS / editor cruft only — credentials/ is intentionally tracked in this repo.
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
