@@ -6,6 +6,19 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/jinub/Programming/phone-parallax-3d", "--", "--port", "5173", "--strictPort"],
       "port": 5173
+    },
+    {
+      "name": "phone-parallax-3d-singlefile",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "-l", "4173", "C:/Users/jinub/Programming/phone-parallax-3d/dist-singlefile"],
+      "port": 4173
+    },
+    {
+      "name": "quick-random",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/jinub/Programming/quick-random"],
+      "autoPort": true,
+      "port": 5174
     }
   ]
 }

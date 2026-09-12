@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env bash
 # claude-setup.sh — one command, sets up everything.
 #
@@ -175,4 +174,3 @@ echo
 echo "Done."
 echo "Claude configuration is available at:"
 echo "  $CLAUDE_DIR"
-```
