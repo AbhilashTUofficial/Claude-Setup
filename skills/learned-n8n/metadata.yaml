@@ -1,0 +1,28 @@
+name: "n8n"
+slug: "n8n"
+knowledge_schema_version: 1
+
+technology:
+  package: "n8n"
+  version_studied: "2.41.0"
+  ecosystem: "npm"
+
+sources:
+  - type: repository
+    url: "https://github.com/n8n-io/n8n"
+    commit: "46be542125d2527e94226413d2bf5b41eb0673c9"
+    retrieved_at: "2026-09-24"
+  - type: documentation
+    url: "https://docs.n8n.io"
+    retrieved_at: "2026-09-24"
+  - type: documentation
+    url: "https://n8n.io"
+    retrieved_at: "2026-09-24"
+
+source_visibility: public
+compiled_at: "2026-09-24"
+last_refreshed: "2026-09-24"
+freshness: fresh
+coverage_status: partial
+confidence: medium
+unresolved_count: 5
