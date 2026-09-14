@@ -1,0 +1,27 @@
+name: "three.js"
+slug: "threejs"
+knowledge_schema_version: 1
+
+technology:
+  package: "three"
+  version_studied: "0.160.0"
+  ecosystem: "npm"
+
+sources:
+  - type: documentation
+    url: "https://threejs.org/docs/"
+    retrieved_at: "2026-09-24"
+  - type: documentation
+    url: "https://threejs.org/manual/"
+    retrieved_at: "2026-09-24"
+  - type: documentation
+    url: "https://threejs.org/"
+    retrieved_at: "2026-09-24"
+
+source_visibility: public
+compiled_at: "2026-09-24"
+last_refreshed: "2026-09-24"
+freshness: fresh
+coverage_status: partial
+confidence: medium
+unresolved_count: 4
