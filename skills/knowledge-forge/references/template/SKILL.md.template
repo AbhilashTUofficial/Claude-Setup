@@ -1,0 +1,45 @@
+<!--
+Template for skills/learned-<slug>/SKILL.md.
+Fill every {{PLACEHOLDER}}. Delete any "## Reference files" bullet whose
+target file doesn't exist for this technology — don't leave dead links.
+Keep the whole body well under ~500 lines / ~5,000 tokens: this is a hard
+truncation boundary on re-attach (Claude Code keeps only the first 5,000
+tokens per skill, shared 25,000-token budget across all attached skills),
+not a style preference. If it's running long, move detail into
+references/, don't compress the writing.
+-->
+---
+name: learned-{{SLUG}}
+description: "{{ONE_TO_TWO_SENTENCE_DESCRIPTION_OF_WHAT_THIS_COVERS_AND_WHEN_TO_TRIGGER}}"
+metadata:
+  knowledge_schema_version: 1
+  learned_skill: true
+---
+
+# {{TECHNOLOGY_DISPLAY_NAME}}
+
+{{ONE_PARAGRAPH_MENTAL_MODEL_SUMMARY}}
+
+Studied at `{{VERSION_STUDIED}}` as of {{COMPILED_AT}}. See `metadata.yaml` for full provenance; see `research/unresolved.md` for what this does *not* yet cover.
+
+## When to use this / when not to
+
+{{ONE_TO_THREE_SENTENCE_SUMMARY}} — full reasoning and concrete scenarios (including at least one explicit when-NOT-to-use case) are in `references/decision-guide.md`.
+
+## Reference files
+
+Read only what the current task actually needs — these are not meant to be loaded together.
+
+- `references/mental-model.md` — the core conceptual model
+- `references/decision-guide.md` — when to use / when not to, with concrete scenarios
+- `references/api.md` — {{ONE_LINE_SCOPE, or delete this bullet if not applicable}}
+- `references/patterns.md` — {{ONE_LINE_SCOPE, or delete this bullet if not applicable}}
+- `references/pitfalls.md` — {{ONE_LINE_SCOPE, or delete this bullet if not applicable}}
+- `references/performance.md` — {{ONE_LINE_SCOPE, or delete this bullet if not applicable}}
+- `examples/` — {{ONE_LINE_SCOPE, or delete this bullet if the technology has no examples/ dir}}
+
+Do not read `research/` for ordinary questions — it's the raw, cited evidence behind the files above (WARM tier), useful only when `references/` genuinely doesn't answer the question at hand.
+
+## If this feels stale
+
+Check `metadata.yaml`'s `freshness` field. If it says `aging` or `stale`, say so before answering and suggest `/knowledge-forge refresh {{SLUG}}`.

@@ -1,0 +1,30 @@
+# Template for skills/learned-<slug>/metadata.yaml.
+# Keep this minimal and honest — an unknown value is recorded as unknown
+# (omit the field or use null), never guessed to look more precise than
+# the source actually supports.
+
+name: "{{TECHNOLOGY_DISPLAY_NAME}}"
+slug: "{{SLUG}}"
+knowledge_schema_version: 1
+
+technology:
+  package: "{{PACKAGE_NAME, e.g. @react-three/fiber — omit if not a package}}"
+  version_studied: "{{VERSION_OR_RANGE, e.g. 9.x}}"
+  ecosystem: "{{npm | pypi | cargo | go | docs-site | other}}"
+
+sources:
+  - type: repository            # repository | documentation | video | local-files
+    url: "{{URL}}"
+    commit: "{{COMMIT_SHA, omit if not a repo or unknown}}"
+    retrieved_at: "{{YYYY-MM-DD}}"
+  # - type: documentation
+  #   url: "{{URL}}"
+  #   retrieved_at: "{{YYYY-MM-DD}}"
+
+source_visibility: public       # public | private — gates knowledge-forge's confirm-before-compile check
+compiled_at: "{{YYYY-MM-DD}}"
+last_refreshed: "{{YYYY-MM-DD}}"   # same as compiled_at on first ingestion
+freshness: fresh                  # fresh | aging | stale
+coverage_status: full             # full | partial — partial means research/unresolved.md has real gaps, not just polish items
+confidence: high                  # high | medium | low — qualitative only, not a fake precision score
+unresolved_count: 0               # count of substantive items in research/unresolved.md
