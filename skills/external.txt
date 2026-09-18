@@ -1,0 +1,13 @@
+# External skills we use but don't vendor here — installed by install.sh via
+# `npx skills add <repo> -g -a claude-code`, one owner/repo per line.
+# Add a skill here instead of copying its code into this repo when it's a
+# large upstream project with its own release cycle (own deps, own CLI,
+# own updates) — same idea as the "Manual" install method most skill repos
+# document, just automated.
+
+# Research skill: aggregates Reddit/X/YouTube/HN/Polymarket/etc for a topic
+# over the last 30 days. Zero-config sources (Reddit, HN, Polymarket, GitHub)
+# work immediately; everything else is opt-in via API keys — see
+# https://github.com/mvanhorn/last30days-skill/blob/main/CONFIGURATION.md
+# if we ever want to add keys to credentials/.
+mvanhorn/last30days-skill

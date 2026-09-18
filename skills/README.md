@@ -39,3 +39,12 @@ ln -s /path/to/Claude-Setup/skills/your-skill-name .claude/skills/your-skill-nam
 ```
 
 Or copy the folder in if you'd rather not depend on the symlink.
+
+## External skills (not vendored here)
+
+For a skill that's really a large upstream project (its own deps, CLI,
+release cycle — e.g. `last30days`), don't copy its code into this repo.
+Instead add `owner/repo` to [`external.txt`](external.txt) and let
+`../install.sh` install it fresh via `npx skills add`. `/update-setup`
+runs `install.sh` automatically, so anything listed there stays current on
+every machine without us tracking its code here.

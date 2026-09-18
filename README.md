@@ -25,10 +25,11 @@ them in — see each folder's own README for the exact convention.
 
 | Folder | What lives there |
 |---|---|
-| [`skills/`](skills/) | Claude Code skills (each in its own subfolder with a `SKILL.md`) |
+| [`skills/`](skills/) | Claude Code skills (each in its own subfolder with a `SKILL.md`); `external.txt` lists ones we install rather than vendor |
 | [`rules/`](rules/) | Shared house rules / coding standards / `CLAUDE.md` conventions |
 | [`credentials/`](credentials/) | API keys and tokens (Anthropic, GitHub, MCP servers, etc.) |
 | [`config/`](config/) | Shared Claude Code settings (`settings.json`, MCP server configs) |
+| [`install.sh`](install.sh) | Installer run by `/update-setup` — links `skills/` into `~/.claude/skills/` and installs everything in `skills/external.txt` |
 
 ## Ground rules
 

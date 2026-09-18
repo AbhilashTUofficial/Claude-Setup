@@ -10,7 +10,13 @@ immediately available.
 
 - `skills/` — Claude Code skills. One subfolder per skill, each containing a
   `SKILL.md` (see `skills/README.md` for the convention). Use the
-  `skill-creator` skill to add or edit skills here.
+  `skill-creator` skill to add or edit skills here. Large upstream skills we
+  don't want to vendor go in `skills/external.txt` instead (one `owner/repo`
+  per line) — `install.sh` installs those via `npx skills add`.
+- `install.sh` — the installer `/update-setup` runs after pulling the latest
+  version of this repo: symlinks everything in `skills/` into
+  `~/.claude/skills/`, then installs everything listed in
+  `skills/external.txt`.
 - `rules/` — Shared house rules and conventions we want any Claude session to
   follow, regardless of which project it's working in.
 - `credentials/` — Real API keys and tokens. Treat everything in this folder
