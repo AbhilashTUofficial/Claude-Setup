@@ -1,0 +1,25 @@
+name: "react-chartjs-2"
+slug: "react-chartjs-2"
+knowledge_schema_version: 1
+
+technology:
+  package: "react-chartjs-2"
+  version_studied: "5.3.1 (npm latest as of 2026-10-20; released 2025-10-27); chart.js 4.5.1 in lab"
+  ecosystem: "npm"
+
+sources:
+  - type: repository
+    url: "https://github.com/reactchartjs/react-chartjs-2"
+    commit: "2df1f08f41ad56c256903b0def68a99272a701dd"   # tag v5.3.1; default-branch HEAD 7c7be48ae5b585f45bc6aef718cc8d4b51f34d0a (2026-05-26) has no diff in src/ or package.json vs the tag
+    retrieved_at: "2026-10-20"
+  - type: documentation
+    url: "https://react-chartjs-2.js.org/"
+    retrieved_at: "2026-10-20"
+
+source_visibility: public
+compiled_at: "2026-10-20"
+last_refreshed: "2026-10-20"
+freshness: fresh
+coverage_status: partial        # all library source, docs and the official sandboxes studied/run; React <19, Next.js App Router build, perf/size, touch, other plugins not exercised
+confidence: high                # library is ~330 lines, fully read; behaviours confirmed by passing vitest probes + real-browser runs (counts in research/examples-run.md). Chart.js core features are only as deep as the wrapper touches them.
+unresolved_count: 10               # items 0-7 in research/unresolved.md (npm page, React <19, Next build, size, perf, touch, plugins, tsd) + stale docs page + maintenance health
