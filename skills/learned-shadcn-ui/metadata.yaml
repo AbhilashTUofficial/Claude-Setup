@@ -1,0 +1,31 @@
+name: "shadcn/ui"
+slug: "shadcn-ui"
+knowledge_schema_version: 1
+
+technology:
+  package: "shadcn"
+  version_studied: "4.22.1 (CLI); repo HEAD ba1503c 2026-10-19; registry components radix/base/aria x 8 styles"
+  ecosystem: "npm"
+
+sources:
+  - type: repository
+    url: "https://github.com/shadcn-ui/ui"
+    commit: "ba1503c64472b82256d9de95e2e62c5901a38e8b"
+    retrieved_at: "2026-10-21"
+  - type: documentation
+    url: "https://ui.shadcn.com/docs"
+    retrieved_at: "2026-10-21"   # read as MDX from the repo clone (apps/v4/content/docs), live site not crawled
+  - type: documentation
+    url: "https://ui.shadcn.com/"
+    retrieved_at: "2026-10-21"   # registry/CLI endpoints exercised live (init/add/view/search/apply); marketing pages not read
+  - type: documentation
+    url: "https://www.shadcn.io/template"
+    retrieved_at: "2026-10-21"   # COMMUNITY third-party directory (no stated affiliation); listing page only via WebFetch
+
+source_visibility: public
+compiled_at: "2026-10-22"
+last_refreshed: "2026-10-22"
+freshness: fresh
+coverage_status: partial          # per-component API pages, aria base, monorepo, RTL, GitHub/authenticated registries, test suites not covered
+confidence: medium                # core CLI/registry/preset/base behavior verified in code + lab; breadth gaps listed in unresolved.md
+unresolved_count: 11
