@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "lab",
+  "homepage": "http://localhost:3000",
+  "items": [
+    {
+      "name": "hello-card",
+      "type": "registry:component",
+      "title": "Hello Card",
+      "description": "Card with greeting",
+      "dependencies": ["zod"],
+      "registryDependencies": ["card", "button"],
+      "files": [
+        { "path": "registry/hello/hello-card.tsx", "type": "registry:component" }
+      ],
+      "cssVars": {
+        "light": { "brand": "oklch(0.6 0.2 260)" },
+        "dark": { "brand": "oklch(0.7 0.15 260)" },
+        "theme": { "color-brand": "var(--brand)" }
+      }
+    },
+    {
+      "name": "lab-env",
+      "type": "registry:file",
+      "files": [
+        { "path": "registry/hello/example.env", "type": "registry:file", "target": "~/.env.example" }
+      ],
+      "envVars": { "LAB_API_URL": "http://localhost:4000" }
+    }
+  ]
+}
